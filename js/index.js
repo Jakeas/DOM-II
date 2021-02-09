@@ -79,16 +79,18 @@ buttons.forEach(item => {
     })
 })
 
-//WORKS - extra
+//WORKS - extra for stop prop
 header.forEach(item => {
     item.addEventListener('click', function (event) {
        event.target.style.background = "red"
     })
 })
+
 //WORKS - prevent default
 navBar.forEach(item => {
     item.addEventListener('click', function (event) {
        event.target.style.color = "purple"
+       event.preventDefault()
     })
 })
 
